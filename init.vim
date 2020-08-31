@@ -51,7 +51,7 @@ noremap <Leader>gr :Gremove<CR>
 set updatetime=100
 
 "General programming rules
-autocmd Filetype c,cpp,python,javascript color dracula
+autocmd Filetype c,cpp,python,javascript color codedark
 autocmd Filetype c,cpp,python,javascript syntax on
 autocmd Filetype c,cpp,python,javascript set rnu
 autocmd BufRead,BufNewFile,BufAdd,BufCreate,BufEnter * :AirlineRefresh
