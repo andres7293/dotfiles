@@ -1,14 +1,14 @@
 "Vim plug instalation --> https://github.com/junegunn/vim-plug
 call plug#begin()
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
-Plug 'morhetz/gruvbox'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
+Plug 'leafgarland/typescript-vim'
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 "vimwiki
