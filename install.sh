@@ -1,5 +1,10 @@
 #!/bin/bash
 
+function coc_support {
+    sudo pacman -S clang
+    nvim -c "CocInstall coc-marketplace coc-python coc-clangd"
+}
+
 #install required packages
 sudo pacman -S neovim
 
@@ -12,3 +17,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 #install all plugins from init.vim
 nvim -c "PlugInstall"
+
+coc_support

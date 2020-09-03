@@ -9,6 +9,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'leafgarland/typescript-vim'
 Plug 'jremmen/vim-ripgrep'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 "vimwiki
