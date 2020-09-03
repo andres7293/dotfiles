@@ -2,7 +2,7 @@
 
 function coc_support {
     sudo pacman -S clang
-    nvim -c "CocInstall coc-marketplace coc-python coc-clangd"
+    nvim +"CocInstall coc-marketplace coc-python coc-clangd" +qall
 }
 
 #install required packages
@@ -16,6 +16,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 
 #install all plugins from init.vim
-nvim -c "PlugInstall"
+nvim +PlugInstall +qall
 
 coc_support
