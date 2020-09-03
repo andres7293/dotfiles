@@ -2,7 +2,16 @@
 
 function coc_support {
     sudo pacman -S node clang
-    nvim +"CocInstall coc-marketplace coc-python coc-clangd"
+    nvim +"CocInstall \
+        coc-marketplace \
+        coc-python \
+        coc-clangd \
+        coc-tsserver \
+        coc-json \
+        coc-markdownlimit \
+        coc-phpactor \
+        coc-rls \
+        coc-git"
 }
 
 #install required packages
