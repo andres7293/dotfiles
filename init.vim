@@ -10,6 +10,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'leafgarland/typescript-vim'
 Plug 'jremmen/vim-ripgrep'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 
 "vimwiki
@@ -71,6 +72,7 @@ nnoremap <F2>   :bprev<CR>
 nnoremap <SPACE> <C-w>w
 nnoremap <backspace> <C-w>c
 nnoremap <TAB> <C-w>v<C-w>w
+nnoremap <TAB>h <C-w>s<C-w>w
 
 "" Make command
 noremap <leader>mm :make<CR>
@@ -88,3 +90,6 @@ noremap <leader>l   :ls<CR>
 "terminal
 noremap <leader>t   :terminal<CR>
 tnoremap <Esc> <C-\><C-n>
+
+"FZF
+nnoremap <leader>f :FZF<CR>
