@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function coc_support {
-    sudo pacman -S clang
+    sudo pacman -S node clang
     nvim +"CocInstall coc-marketplace coc-python coc-clangd" +qall
 }
 
