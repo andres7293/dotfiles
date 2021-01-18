@@ -36,6 +36,7 @@ set nobackup
 "set undodir=~/.vim/undodir
 "set undofile
 set incsearch
+set wrap
 
 let mapleader=','
 
@@ -53,9 +54,9 @@ noremap <Leader>gr :Gremove<CR>
 set updatetime=100
 
 "General programming rules
-autocmd Filetype c,cpp,python,javascript color codedark
-autocmd Filetype c,cpp,python,javascript syntax on
-autocmd Filetype c,cpp,python,javascript set rnu
+autocmd Filetype c,cpp,python,javascript,typescript color codedark
+autocmd Filetype c,cpp,python,javascript,typescript syntax on
+autocmd Filetype c,cpp,python,javascript,typescript set rnu
 autocmd BufRead,BufNewFile,BufAdd,BufCreate,BufEnter * :AirlineRefresh
 "programming symbols autocompletion
 "autocmd Filetype c,cpp,python,javascript,typescript inoremap ( ()<ESC>i
