@@ -87,8 +87,10 @@ noremap <leader>ct  :!ctags -R .<CR>
 "list vim buffers
 noremap <leader>l   :ls<CR>
 
-"terminal
-noremap <leader>t   :terminal<CR>
+"open terminal
+noremap <leader>t   :terminal<CR>i
+noremap -   :terminal<CR>i
+"exit terminal mode
 tnoremap <Esc> <C-\><C-n>
 
 "FZF
