@@ -73,6 +73,10 @@ nnoremap <SPACE> <C-w>w
 nnoremap <backspace> <C-w>c
 nnoremap <TAB> <C-w>v<C-w>w
 nnoremap <TAB>h <C-w>s<C-w>w
+"full screen
+nnoremap <TAB>o <C-w>o
+"back to latest buffer
+nnoremap <TAB>p :b#<CR>
 
 "" Make command
 noremap <leader>mm :make<CR>
@@ -98,3 +102,6 @@ nnoremap <leader>f :FZF<CR>
 
 "reload vimrc
 nnoremap %% :source ~/.config/nvim/init.vim<CR>
+
+"opens help in full screen
+nnoremap K K<C-w>o
