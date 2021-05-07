@@ -7,10 +7,7 @@ Plug 'vimwiki/vimwiki'
 Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
-Plug 'leafgarland/typescript-vim'
-Plug 'jremmen/vim-ripgrep'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 
 "vimwiki
@@ -37,6 +34,7 @@ set nobackup
 "set undofile
 set incsearch
 set wrap
+"set guicursor=
 
 let mapleader=','
 

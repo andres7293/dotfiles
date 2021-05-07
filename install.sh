@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function coc_support {
-    sudo pacman -S node clang
+    sudo pacman -S nodejs clang
     nvim +"CocInstall \
         coc-marketplace \
         coc-python \
@@ -9,13 +9,12 @@ function coc_support {
         coc-tsserver \
         coc-json \
         coc-markdownlimit \
-        coc-phpactor \
         coc-rls \
         coc-git"
 }
 
 #install required packages
-sudo pacman -S neovim fzf
+sudo pacman -S neovim
 
 mkdir -p ~/.config/nvim/
 ln -s $(pwd)/init.vim ~/.config/nvim/init.vim
