@@ -33,7 +33,7 @@ set noswapfile
 set nobackup
 set incsearch
 set wrap
-"set guicursor=
+set guicursor=
 "set undodir=~/.vim/undodir
 "set undofile
 
@@ -93,3 +93,6 @@ tnoremap <Esc> <C-\><C-n>
 
 "FZF
 nnoremap <leader>f :FZF<CR>
+
+"reload vimrc
+nnoremap %% :source ~/.config/nvim/init.vim<CR>
