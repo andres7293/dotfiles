@@ -8,6 +8,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 call plug#end()
 
 "vimwiki
@@ -30,11 +31,11 @@ set nowrap
 set smartcase
 set noswapfile
 set nobackup
-"set undodir=~/.vim/undodir
-"set undofile
 set incsearch
 set wrap
 "set guicursor=
+"set undodir=~/.vim/undodir
+"set undofile
 
 let mapleader=','
 
