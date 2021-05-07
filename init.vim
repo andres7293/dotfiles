@@ -9,6 +9,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'voldikss/vim-floaterm'
 call plug#end()
 
 "vimwiki
@@ -96,6 +97,9 @@ noremap <leader>t   :terminal<CR>i
 noremap -   :terminal<CR>i
 "exit terminal mode
 tnoremap <Esc> <C-\><C-n>
+
+"Floaterm
+noremap ``   :FloatermToggle<CR>
 
 "FZF
 nnoremap <leader>f :FZF<CR>
