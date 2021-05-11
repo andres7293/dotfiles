@@ -97,6 +97,8 @@ noremap <leader>t   :terminal<CR>i
 noremap -   :terminal<CR>i
 "exit terminal mode
 tnoremap <Esc> <C-\><C-n>
+"Set bufhidden to keeps the buffer open
+autocmd TermOpen * set bufhidden=hide
 
 "Floaterm
 noremap ``   :FloatermToggle<CR>
