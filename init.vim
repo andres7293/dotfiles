@@ -73,7 +73,8 @@ nnoremap <F2>   :bprev<CR>
 nnoremap <SPACE> <C-w>w
 nnoremap <backspace> <C-w>c
 nnoremap <TAB> <C-w>v<C-w>w
-nnoremap <TAB>h <C-w>s<C-w>w
+nnoremap <TAB>v <C-w>v<C-w>w
+nnoremap <TAB>s <C-w>s<C-w>w
 "full screen
 nnoremap <TAB>o <C-w>o
 "back to latest buffer
