@@ -10,6 +10,7 @@ Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'voldikss/vim-floaterm'
+Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
 "vimwiki
