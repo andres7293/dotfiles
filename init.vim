@@ -113,3 +113,9 @@ nnoremap %% :source ~/.config/nvim/init.vim<CR>
 
 "opens help in full screen
 nnoremap K K<C-w>o
+
+"Coc code navigation
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
