@@ -10,6 +10,7 @@ function coc_support {
         coc-json \
         coc-markdownlimit \
         coc-rls \
+        coc-go \
         coc-git"
 }
 
