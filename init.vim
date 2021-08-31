@@ -55,9 +55,9 @@ noremap <Leader>gr :Gremove<CR>
 set updatetime=100
 
 "General programming rules
-autocmd Filetype c,cpp,python,javascript,typescript color codedark
-autocmd Filetype c,cpp,python,javascript,typescript syntax on
-autocmd Filetype c,cpp,python,javascript,typescript set rnu
+autocmd Filetype c,cpp,python,javascript,typescript,go color codedark
+autocmd Filetype c,cpp,python,javascript,typescript,go syntax on
+autocmd Filetype c,cpp,python,javascript,typescript,go set rnu
 autocmd BufRead,BufNewFile,BufAdd,BufCreate,BufEnter * :AirlineRefresh
 "programming symbols autocompletion
 "autocmd Filetype c,cpp,python,javascript,typescript inoremap ( ()<ESC>i
