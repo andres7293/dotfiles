@@ -14,7 +14,10 @@ function coc_support {
 }
 
 #install required packages
-sudo pacman -S neovim fzf
+sudo pacman -S neovim fzf gopls
+#install tsserver
+sudo pacman -S npm
+npm install -g typescript typescript-language-server
 
 mkdir -p ~/.config/nvim/
 ln -s $(pwd)/init.vim ~/.config/nvim/init.vim
