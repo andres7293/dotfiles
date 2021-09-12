@@ -130,7 +130,7 @@ local on_attach = function(client, bufnr)
 end
 
 local nvim_lsp = require("lspconfig")
-local servers = {'clangd', 'gopls', 'tsserver', 'pylsp', 'yamlls', 'sqls', 'rust_analyzer'}
+local servers = {'clangd', 'gopls', 'tsserver', 'jedi_language_server', 'yamlls', 'sqls', 'rust_analyzer'}
 for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
             on_attach = on_attach
