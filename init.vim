@@ -111,9 +111,6 @@ nnoremap <leader>f :FZF<CR>
 "reload vimrc
 nnoremap %% :source ~/.config/nvim/init.vim<CR>
 
-"opens help in full screen
-nnoremap K K<C-w>o
-
 "Coc code navigation
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gD <Plug>(coc-implementation)
