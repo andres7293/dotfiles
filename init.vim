@@ -9,7 +9,6 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'voldikss/vim-floaterm'
 Plug 'jremmen/vim-ripgrep'
 call plug#end()
 
@@ -101,9 +100,6 @@ noremap -   :terminal<CR>i
 tnoremap <Esc> <C-\><C-n>
 "Set bufhidden to keeps the buffer open
 autocmd TermOpen * set bufhidden=hide
-
-"Floaterm
-noremap ``   :FloatermToggle<CR>
 
 "FZF
 nnoremap <leader>f :FZF<CR>
