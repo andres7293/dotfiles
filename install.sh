@@ -11,7 +11,9 @@ function coc_support {
         coc-markdownlimit \
         coc-rls \
         coc-go \
-        coc-git"
+        coc-git \
+        coc-xml \
+        coc-yaml"
 }
 
 #install required packages
