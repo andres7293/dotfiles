@@ -8,8 +8,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'jremmen/vim-ripgrep'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -103,9 +101,6 @@ noremap -   :terminal<CR>i
 tnoremap <Esc> <C-\><C-n>
 "Set bufhidden to keeps the buffer open
 autocmd TermOpen * set bufhidden=hide
-
-"FZF
-nnoremap <leader>f :FZF<CR>
 
 "reload vimrc
 nnoremap %% :source ~/.config/nvim/init.vim<CR>
