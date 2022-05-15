@@ -15,6 +15,7 @@ Plug 'nvim-lua/plenary.nvim' "harpoon dependency
 Plug 'nvim-lualine/lualine.nvim'
 "Test this plugin
 Plug 'ap/vim-buftabline'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 "" Fix backspace indent
