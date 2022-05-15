@@ -3,7 +3,7 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -12,6 +12,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-lua/plenary.nvim' "harpoon dependency
+Plug 'nvim-lualine/lualine.nvim'
 call plug#end()
 
 "" Fix backspace indent
@@ -53,7 +54,7 @@ set updatetime=100
 autocmd Filetype c,cpp,python,javascript,typescript,go color codedark
 autocmd Filetype c,cpp,python,javascript,typescript,go syntax on
 autocmd Filetype c,cpp,python,javascript,typescript,go set rnu
-autocmd BufRead,BufNewFile,BufAdd,BufCreate,BufEnter * :AirlineRefresh
+"autocmd BufRead,BufNewFile,BufAdd,BufCreate,BufEnter * :AirlineRefresh
 "programming symbols autocompletion
 "autocmd Filetype c,cpp,python,javascript,typescript inoremap ( ()<ESC>i
 "autocmd Filetype c,cpp,python,javascript,typescript inoremap { {}<ESC>i
@@ -121,3 +122,8 @@ nnoremap <leader>ml :lua require("harpoon.ui").toggle_quick_menu()<cr>
 "Cycle list
 nnoremap <leader>mn :lua require("harpoon.ui").nav_next()<cr>
 nnoremap <leader>mp :lua require("harpoon.ui").nav_prev()<cr>
+
+"lualine
+lua << END
+require('lualine').setup()
+END
