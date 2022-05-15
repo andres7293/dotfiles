@@ -10,6 +10,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'ThePrimeagen/harpoon'
+Plug 'nvim-lua/plenary.nvim' "harpoon dependency
 call plug#end()
 
 "" Fix backspace indent
@@ -110,3 +112,12 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
+
+"Harpoon
+"Mark file
+nnoremap <leader>ma :lua require("harpoon.mark").add_file()<cr>
+"Quick menu
+nnoremap <leader>ml :lua require("harpoon.ui").toggle_quick_menu()<cr>
+"Cycle list
+nnoremap <leader>mn :lua require("harpoon.ui").nav_next()<cr>
+nnoremap <leader>mp :lua require("harpoon.ui").nav_prev()<cr>
