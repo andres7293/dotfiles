@@ -16,6 +16,7 @@ Plug 'nvim-lualine/lualine.nvim'
 "Test this plugin
 Plug 'ap/vim-buftabline'
 Plug 'preservim/nerdtree'
+Plug 'terrortylor/nvim-comment'
 call plug#end()
 
 "" Fix backspace indent
@@ -118,7 +119,10 @@ nnoremap <leader>ml :lua require("harpoon.ui").toggle_quick_menu()<cr>
 nnoremap <leader>mn :lua require("harpoon.ui").nav_next()<cr>
 nnoremap <leader>mp :lua require("harpoon.ui").nav_prev()<cr>
 
-"lualine
+"nvim comment
+vnoremap c :'<,'>CommentToggle<cr>
+
 lua << END
 require('lualine').setup()
+require('nvim_comment').setup()
 END
