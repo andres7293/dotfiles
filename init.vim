@@ -54,14 +54,6 @@ set updatetime=100
 autocmd Filetype c,cpp,python,javascript,typescript,go color codedark
 autocmd Filetype c,cpp,python,javascript,typescript,go syntax on
 autocmd Filetype c,cpp,python,javascript,typescript,go set rnu
-"autocmd BufRead,BufNewFile,BufAdd,BufCreate,BufEnter * :AirlineRefresh
-"programming symbols autocompletion
-"autocmd Filetype c,cpp,python,javascript,typescript inoremap ( ()<ESC>i
-"autocmd Filetype c,cpp,python,javascript,typescript inoremap { {}<ESC>i
-"autocmd Filetype c,cpp,python,javascript,typescript inoremap [ []<ESC>i
-
-"Cpp config
-autocmd Filetype cpp inoremap this  this->
 
 "buffer movmement
 nnoremap <F3>   :bnext<CR>
