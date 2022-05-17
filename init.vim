@@ -14,7 +14,7 @@ Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-lua/plenary.nvim' "harpoon dependency
 Plug 'nvim-lualine/lualine.nvim'
 "Test this plugin
-Plug 'ap/vim-buftabline'
+"Plug 'ap/vim-buftabline'
 Plug 'preservim/nerdtree'
 Plug 'terrortylor/nvim-comment'
 call plug#end()
