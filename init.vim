@@ -120,7 +120,7 @@ nnoremap <leader>mn :lua require("harpoon.ui").nav_next()<cr>
 nnoremap <leader>mp :lua require("harpoon.ui").nav_prev()<cr>
 
 "nvim comment
-vnoremap c :'<,'>CommentToggle<cr>
+"vnoremap c :'<,'>CommentToggle<cr>
 
 lua << END
 require('lualine').setup()
