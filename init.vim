@@ -41,15 +41,15 @@ set guicursor=
 
 let mapleader=','
 
-"" Git
-noremap <Leader>ga :Gwrite<CR>
-noremap <Leader>gc :Git<CR>
-noremap <Leader>gsh :Gpush<CR>
-noremap <Leader>gll :Gpull<CR>
-noremap <Leader>gs :Gstatus<CR>
-noremap <Leader>gb :Gblame<CR>
-noremap <Leader>gd :Gvdiff<CR>
-noremap <Leader>gr :Gremove<CR>
+"" Git fugitive
+"noremap <Leader>ga :Gwrite<CR>
+"noremap <Leader>gc :Git<CR>
+noremap <Leader>gph :Git push<CR>
+noremap <Leader>gp :Git pull<CR>
+noremap <Leader>gl :Git log<CR>
+noremap <Leader>gs :Git status<CR>
+noremap <Leader>gb :Git blame<CR>
+noremap <Leader>gd :Git diff<CR>
 
 " git-gutter
 set updatetime=100
