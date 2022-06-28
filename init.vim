@@ -72,6 +72,8 @@ nnoremap <TAB>s <C-w>s<C-w>w
 nnoremap <TAB>o <C-w>o
 "back to latest buffer
 nnoremap <TAB>p :b#<CR>
+"NERDTree
+nnoremap <TAB>  :NERDTreeToggle<CR>
 
 "" Make command
 noremap <leader>mm :make<CR>
