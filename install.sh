@@ -13,6 +13,7 @@ function coc_support {
         coc-go \
         coc-git \
         coc-xml \
+        coc-docker \
         coc-yaml"
 }
 
