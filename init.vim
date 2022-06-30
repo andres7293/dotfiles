@@ -49,7 +49,9 @@ noremap <Leader>gp :Git pull<CR>
 noremap <Leader>gl :Git log<CR>
 noremap <Leader>gs :Git status<CR>
 noremap <Leader>gb :Git blame<CR>
-noremap <Leader>gd :Git diff<CR>
+noremap <Leader>gds :Git diff --staged<CR>
+noremap <Leader>gc :Git commit<CR>
+noremap <Leader>gf :Git fetch<CR>
 
 " git-gutter
 set updatetime=100
