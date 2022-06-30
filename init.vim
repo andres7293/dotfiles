@@ -121,6 +121,9 @@ nnoremap <leader>ml :lua require("harpoon.ui").toggle_quick_menu()<cr>
 nnoremap <leader>mn :lua require("harpoon.ui").nav_next()<cr>
 nnoremap <leader>mp :lua require("harpoon.ui").nav_prev()<cr>
 
+"Adjust screen after search for word
+nnoremap n  nzz<CR>
+
 "nvim comment
 "vnoremap c :'<,'>CommentToggle<cr>
 
