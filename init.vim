@@ -58,7 +58,7 @@ set updatetime=100
 autocmd Filetype c,cpp,python,javascript,typescript,go color codedark
 autocmd Filetype c,cpp,python,javascript,typescript,go syntax on
 autocmd Filetype c,cpp,python,javascript,typescript,go set rnu
-autocmd BufEnter * set nu
+autocmd BufEnter c,cpp,python,javascript,typescript,go set nu
 
 "buffer movmement
 nnoremap <F3>   :bnext<CR>
