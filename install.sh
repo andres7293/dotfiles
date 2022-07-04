@@ -14,6 +14,7 @@ function coc_support {
         coc-git \
         coc-xml \
         coc-docker \
+        coc-lua \
         coc-yaml"
 }
 
