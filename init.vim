@@ -3,7 +3,6 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
-"Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
@@ -11,8 +10,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-lua/plenary.nvim' "harpoon dependency
 Plug 'nvim-lualine/lualine.nvim'
-"Test this plugin
-"Plug 'ap/vim-buftabline'
 Plug 'preservim/nerdtree'
 Plug 'terrortylor/nvim-comment'
 "Colorscheme
