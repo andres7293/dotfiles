@@ -4,8 +4,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 "Plug 'vim-airline/vim-airline'
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'tomasiser/vim-code-dark'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-lua/plenary.nvim'
@@ -17,6 +15,9 @@ Plug 'nvim-lualine/lualine.nvim'
 "Plug 'ap/vim-buftabline'
 Plug 'preservim/nerdtree'
 Plug 'terrortylor/nvim-comment'
+"Colorscheme
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'tomasiser/vim-code-dark'
 call plug#end()
 
 "" Fix backspace indent
