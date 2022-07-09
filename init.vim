@@ -36,6 +36,7 @@ set wrap
 set guicursor=
 "set undodir=~/.vim/undodir
 "set undofile
+set textwidth=120
 
 let mapleader=','
 
