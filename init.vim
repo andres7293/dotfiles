@@ -15,6 +15,7 @@ Plug 'terrortylor/nvim-comment'
 "Colorscheme
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 "" Fix backspace indent
@@ -55,8 +56,15 @@ noremap <Leader>gf :Git fetch<CR>
 " git-gutter
 set updatetime=100
 
+"Colorscheme
+let g:gruvbox_contrast_dark='hard'
+let g:gruvbox_invert_signs=0
+let g:gitgutter_override_sign_column_highlight=1
+set background=dark
+colorscheme gruvbox
+
 "General programming rules
-autocmd Filetype c,cpp,python,javascript,typescript,go color codedark
+"autocmd Filetype c,cpp,python,javascript,typescript,go color gruvbox
 autocmd Filetype c,cpp,python,javascript,typescript,go syntax on
 autocmd Filetype c,cpp,python,javascript,typescript,go set rnu
 autocmd BufEnter c,cpp,python,javascript,typescript,go set nu
