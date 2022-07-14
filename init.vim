@@ -10,7 +10,6 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-lua/plenary.nvim' "harpoon dependency
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'preservim/nerdtree'
 Plug 'terrortylor/nvim-comment'
 "Colorscheme
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -81,8 +80,6 @@ nnoremap <TAB>s <C-w>s<C-w>w
 nnoremap <TAB>o <C-w>o
 "back to latest buffer
 nnoremap <TAB>p :b#<CR>
-"NERDTree
-nnoremap <TAB>  :NERDTreeToggle<CR>
 
 "" Make command
 noremap <leader>mm :make<CR>
