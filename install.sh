@@ -15,6 +15,8 @@ function coc_support {
         coc-xml \
         coc-docker \
         coc-lua \
+        coc-eslint \
+        coc-tslint \
         coc-yaml"
 }
 
