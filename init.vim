@@ -113,6 +113,8 @@ nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gD <Plug>(coc-implementation)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
+nmap <silent> gsc :call CocAction("showIncomingCalls")<CR>
+nmap <silent> gsC :call CocAction("showOutgoingCalls")<CR>
 
 "" Find files using Telescope command-line sugar.
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
