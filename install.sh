@@ -17,6 +17,9 @@ function coc_support {
         coc-lua \
         coc-eslint \
         coc-tslint \
+        coc-cmake \
+        coc-deno \
+        coc-sh \
         coc-yaml"
 }
 
