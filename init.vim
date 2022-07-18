@@ -67,6 +67,7 @@ colorscheme gruvbox
 autocmd Filetype c,cpp,python,javascript,typescript,go syntax on
 autocmd Filetype c,cpp,python,javascript,typescript,go set rnu
 autocmd BufEnter c,cpp,python,javascript,typescript,go set nu
+autocmd Filetype markdown set textwidth=80
 
 "buffer movmement
 nnoremap <F3>   :bnext<CR>
