@@ -89,9 +89,6 @@ noremap <leader>mc :make clean<CR>
 "Press scape to disable syntax hl search
 nmap <ESC> <ESC>:nohl<CR>
 
-"Ctags
-noremap <leader>ct  :!ctags -R .<CR>
-
 "list vim buffers
 noremap <leader>l   :ls<CR>
 
