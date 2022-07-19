@@ -5,7 +5,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'ThePrimeagen/harpoon'
 Plug 'nvim-lua/plenary.nvim' "harpoon dependency
@@ -68,6 +67,7 @@ autocmd Filetype c,cpp,python,javascript,typescript,go syntax on
 autocmd Filetype c,cpp,python,javascript,typescript,go set rnu
 autocmd BufEnter c,cpp,python,javascript,typescript,go set nu
 autocmd Filetype markdown set textwidth=80
+autocmd Filetype markdown set nu
 
 "buffer movmement
 nnoremap <F3>   :bnext<CR>
