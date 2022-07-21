@@ -136,4 +136,13 @@ nnoremap n  nzz<CR>
 lua << END
 require('lualine').setup()
 require('nvim_comment').setup()
+
+require'nvim-treesitter.configs'.setup {
+  --auto install the following parsers:
+  ensure_installed = { "c", "cpp", "javascript", "typescript", "go" },
+  auto_install = true,
+  highlight = {
+    enable = true,
+  },
+}
 END
