@@ -94,7 +94,6 @@ noremap <leader>l   :ls<CR>
 
 "open terminal
 noremap <leader>t   :terminal<CR>i
-noremap -   :terminal<CR>i
 "exit terminal mode
 tnoremap <Esc> <C-\><C-n>
 "Set bufhidden to keeps the buffer open
