@@ -139,7 +139,7 @@ require('nvim_comment').setup()
 
 require'nvim-treesitter.configs'.setup {
   --auto install the following parsers:
-  ensure_installed = { "c", "cpp", "javascript", "typescript", "go" },
+  ensure_installed = { "c", "cpp", "javascript", "typescript", "go", "python" },
   auto_install = true,
   highlight = {
     enable = true,
