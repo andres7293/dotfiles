@@ -24,7 +24,7 @@ function coc_support {
 }
 
 #install required packages
-sudo pacman -S neovim fzf ripgrep
+sudo pacman -S neovim fzf ripgrep fd
 
 mkdir -p ~/.config/nvim/
 ln -s $(pwd)/init.vim ~/.config/nvim/init.vim
