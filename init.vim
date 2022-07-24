@@ -48,6 +48,7 @@ noremap <Leader>gl :Git log<CR>
 noremap <Leader>gs :Git status<CR>
 noremap <Leader>gb :Git blame<CR>
 noremap <Leader>gds :Git diff --staged<CR>
+noremap <Leader>gdd :Git diff<CR>
 noremap <Leader>gc :Git commit<CR>
 noremap <Leader>gf :Git fetch<CR>
 
@@ -111,12 +112,17 @@ nmap <silent> grn <Plug>(coc-rename)
 nmap <silent> gsc :call CocAction("showIncomingCalls")<CR>
 nmap <silent> gsC :call CocAction("showOutgoingCalls")<CR>
 
+"Telescope
 "" Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-nnoremap <leader>fo <cmd>Telescope oldfiles<cr>
+nnoremap tff <cmd>Telescope find_files<cr>
+nnoremap tfg <cmd>Telescope live_grep<cr>
+nnoremap tfb <cmd>Telescope buffers<cr>
+nnoremap tfh <cmd>Telescope help_tags<cr>
+nnoremap tfo <cmd>Telescope oldfiles<cr>
+"Telescope git
+nnoremap tgb <cmd>Telescope git_branches<cr>
+"Telescope treesitter search variables,functions,etc
+nnoremap tts <cmd>Telescope treesitter<cr>
 
 "Harpoon
 "Mark file
