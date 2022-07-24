@@ -42,8 +42,8 @@ let mapleader=','
 "" Git fugitive
 "noremap <Leader>ga :Gwrite<CR>
 "noremap <Leader>gc :Git<CR>
-noremap <Leader>gph :Git push<CR>
-noremap <Leader>gp :Git pull<CR>
+noremap <Leader>gpu :Git push<CR>
+noremap <Leader>gpl :Git pull<CR>
 noremap <Leader>gl :Git log<CR>
 noremap <Leader>gs :Git status<CR>
 noremap <Leader>gb :Git blame<CR>
