@@ -116,7 +116,7 @@ nmap <silent> gsC :call CocAction("showOutgoingCalls")<CR>
 "" Find files using Telescope command-line sugar.
 nnoremap tff <cmd>Telescope find_files<cr>
 nnoremap tfg <cmd>Telescope live_grep<cr>
-nnoremap tfb <cmd>Telescope buffers<cr>
+nnoremap tbf <cmd>Telescope buffers<cr>
 nnoremap tfh <cmd>Telescope help_tags<cr>
 nnoremap tfo <cmd>Telescope oldfiles<cr>
 "Telescope git
