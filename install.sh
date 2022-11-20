@@ -2,6 +2,8 @@
 
 function coc_support {
     sudo pacman -S nodejs clang
+    "needed for python code nav
+    pip3 install jedi
     nvim +"CocInstall \
         coc-marketplace \
         coc-python \
