@@ -136,6 +136,9 @@ nnoremap <leader>mp :lua require("harpoon.ui").nav_prev()<cr>
 "Adjust screen after search for word
 nnoremap n  nzz<CR>
 
+"Delete unwanted space at the end of line
+nnoremap <leader>w :%s/\s\+$//e<CR>
+
 "nvim comment
 "vnoremap c :'<,'>CommentToggle<cr>
 
