@@ -3,7 +3,6 @@ call plug#begin()
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'ThePrimeagen/harpoon'
@@ -102,15 +101,6 @@ autocmd TermOpen * set bufhidden=hide
 
 "reload vimrc
 nnoremap %% :source ~/.config/nvim/init.vim<CR>
-
-"Coc code navigation
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gD <Plug>(coc-implementation)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> grn <Plug>(coc-rename)
-nmap <silent> gsc :call CocAction("showIncomingCalls")<CR>
-nmap <silent> gsC :call CocAction("showOutgoingCalls")<CR>
 
 "Telescope
 "" Find files using Telescope command-line sugar.
