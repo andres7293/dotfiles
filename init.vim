@@ -13,6 +13,23 @@ Plug 'terrortylor/nvim-comment'
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'tomasiser/vim-code-dark'
 Plug 'morhetz/gruvbox'
+""ZERO-LSP
+"" LSP Support
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+" Autocompletion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lua'
+"  Snippets
+Plug 'L3MON4D3/LuaSnip'
+" Snippet collection (Optional)
+Plug 'rafamadriz/friendly-snippets'
+Plug 'VonHeikemen/lsp-zero.nvim'
 call plug#end()
 
 "" Fix backspace indent
@@ -135,6 +152,9 @@ nnoremap <leader>w :%s/\s\+$//e<CR>
 lua << END
 require('lualine').setup()
 require('nvim_comment').setup()
+local lsp = require('lsp-zero')
+lsp.preset('recommended')
+lsp.setup()
 
 require'nvim-treesitter.configs'.setup {
   --auto install the following parsers:
@@ -144,4 +164,5 @@ require'nvim-treesitter.configs'.setup {
     enable = true,
   },
 }
+
 END
