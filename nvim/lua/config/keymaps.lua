@@ -11,7 +11,7 @@ end, { desc = "Show incoming calls" })
 
 map("n", "gC", function()
   vim.lsp.buf.incoming_calls()
-end, { desc = "Show outgoing calls" })
+end, { desc = "Show coming calls" })
 
 -- harpoon
 map("n", "<leader>ma", function()
@@ -30,3 +30,16 @@ end, { desc = "Next buffer" })
 map("n", "<F2>", function()
   vim.cmd.bprev()
 end, { desc = "Prev buffer" })
+
+-- neotest
+map("n", "<leader>tc", function()
+  require("neotest").run.run()
+end, { desc = "Run current test" })
+
+map("n", "<leader>tf", function()
+  require("neotest").run.run(vim.fn.expand("%"))
+end, { desc = "Run current file" })
+
+map("n", "<leader>tp", function()
+  require("neotest").output_panel.open()
+end, { desc = "Show output panel" })
