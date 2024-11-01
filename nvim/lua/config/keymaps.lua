@@ -43,3 +43,11 @@ end, { desc = "Run current file" })
 map("n", "<leader>tp", function()
   require("neotest").output_panel.open()
 end, { desc = "Show output panel" })
+
+--pomodoro
+map("n", "<leader>ps", ":PomodoroStart<cr>", { desc = "Pomodoro start" })
+map("n", "<leader>pt", ":PomodoroStop<cr>", { desc = "Pomodoro stop" })
+map("n", "<leader>pu", ":PomodoroUI<cr>", { desc = "Pomodoro UI" })
+map("n", "<leader>pk", ":PomodoroSkipBreak<cr>", { desc = "Pomodoro skip break" })
+map("n", "<leader>pf", ":PomodoroForceBreak<cr>", { desc = "Pomodoro force break" })
+map("n", "<leader>pd", ":PomodoroDelayBreak<cr>", { desc = "Pomodoro delay break" })
