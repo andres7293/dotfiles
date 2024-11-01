@@ -51,3 +51,6 @@ map("n", "<leader>pu", ":PomodoroUI<cr>", { desc = "Pomodoro UI" })
 map("n", "<leader>pk", ":PomodoroSkipBreak<cr>", { desc = "Pomodoro skip break" })
 map("n", "<leader>pf", ":PomodoroForceBreak<cr>", { desc = "Pomodoro force break" })
 map("n", "<leader>pd", ":PomodoroDelayBreak<cr>", { desc = "Pomodoro delay break" })
+
+--nvim-blame-line
+map("n", "<leader>gt", ":ToggleBlameLine<cr>", { desc = "toggle git blame" })
