@@ -2,7 +2,6 @@ return {
   { "ldelossa/calltree.nvim" },
   { "ThePrimeagen/harpoon" },
   { "ellisonleao/glow.nvim", config = true, cmd = "Glow" },
-  { "gaborvecsei/usage-tracker.nvim" },
   { "tveskag/nvim-blame-line" },
 
   {
@@ -16,5 +15,17 @@ return {
       long_break_duration = 15,
       breaks_before_long = 4,
     },
+  },
+
+  {
+    "ptdewey/pendulum-nvim",
+    config = function()
+      require("pendulum").setup({
+        timeout_len = 900, --15 min
+        timer_len = 60, -- 1min
+        gen_reports = true,
+        top_n = 20,
+      })
+    end,
   },
 }
